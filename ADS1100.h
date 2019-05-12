@@ -1,6 +1,8 @@
 /**************************************************************************/
 /*
-        Library for ADS1100
+        Library for ADS1100 Analog to digital converter
+		  It uses VCC as a reference voltage making it ideal to measure
+		  resistance - thermistors  are an example
 */
 /**************************************************************************/
 
@@ -20,13 +22,13 @@
 /**************************************************************************
     CONFIGURATION REGISTER
 **************************************************************************/
-   #define ADS1100_START_SINGLE_CONVERSION				(0x80)		// In single conversion mode, writing causes a conversion to start, and writing a 0 has no effect. No effect in continous
+   #define ADS1100_START_SINGLE_CONVERSION				(0x80)		// In single conversion mode, writing causes a conversion to start, and writing a 0 has no effect. No effect in continuous
 	
 	#define ADS1100_CONVERSION_MASK							(0x10)		// single conversion mode. IF not set - continuous conversion mode
 	#define ADS1100_CONVERSION_SINGLE						(0x10)		// single conversion mode. IF not set - continuous conversion mode
 	#define ADS1100_CONVERSION_CONTINOUS					(0x00)		// single conversion mode. IF not set - continuous conversion mode
 	
-	#define ADS1100_DATA_RATE_MASK							(0x0C)		// ADS1100’s data rate 128 - 8 SPS
+	#define ADS1100_DATA_RATE_MASK							(0x0C)		// ADS1100’s data rate 128 - 8 SPS. SPS = samples per second
 	#define ADS1100_DATA_RATE_128SPS							(0x00)					
 	#define ADS1100_DATA_RATE_32SPS							(0x04)
 	#define ADS1100_DATA_RATE_16SPS							(0x08)
