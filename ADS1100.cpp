@@ -40,7 +40,7 @@ ADS1100::ADS1100(byte address)
 
 /**************************************************************************/
 /*
-	Starting the I2C communication with the ADS1100 unit
+	Starts the I2C communication (Wire.begin) with the ADS1100 unit
 */
 /**************************************************************************/
 void ADS1100::begin(void)
@@ -50,7 +50,7 @@ void ADS1100::begin(void)
 
 /**************************************************************************/
 /*
-	Reading the ADC dara regardless of the fact it is avaliable
+	Reads the ADC value data regardless of the fact it is recent or not. Works (obligatory) in continuous reading mode, optional in the single mode. Read the value int16_t instead
 */
 /**************************************************************************/
 int16_t ADS1100::getvalue(void)
@@ -69,7 +69,9 @@ int16_t ADS1100::getvalue(void)
 
 /**************************************************************************/
 /*
-	Configuring the operation mode of the ADS1100 unit
+	Parameters: None Description: Configures the operation mode of the ADS1100 unit.
+	Possible options:  (ADS1100_CONVERSION_SINGLE or ADS1100_CONVERSION_CONTINOUS, ADS1100_DATA_RATE_128SPS or ADS1100_DATA_RATE_32SPS or ADS1100_DATA_RATE_16SPS or ADS1100_DATA_RATE_8SPS, ADS1100_GAIN_1X or ADS1100_GAIN_2X or ADS1100_GAIN_4X or ADS1100_GAIN_8X)
+	
 */
 /**************************************************************************/
 void ADS1100::configure(uint8_t singleMode, uint8_t dataRate, uint8_t gain) {
@@ -88,8 +90,8 @@ void ADS1100::configure(uint8_t singleMode, uint8_t dataRate, uint8_t gain) {
 
 /**************************************************************************/
 /*
-	Checking if the conversion is completed and reading the ADC value as well
-	If the conversion is not completed yet, the ADC value is the old one
+	Checks (i) if the conversion is completed and ii) reads the ADC value. 
+	If the conversion is not completed yet, the ADC value is the old one.
 */
 /**************************************************************************/
 uint8_t ADS1100::conversionDone() { 	// check if conversion was completed. Reasonable only in the single conversion mode
@@ -109,8 +111,7 @@ uint8_t ADS1100::conversionDone() { 	// check if conversion was completed. Reaso
 
 /**************************************************************************/
 /*
-	Requesting to start the reading the ADC value. The reading actually 
-	takes the whole reading time
+	Requests the unit to start the reading the ADC value. The reading actually takes the whole reading time.
 */
 /**************************************************************************/
 void ADS1100::startSingleConversion() {

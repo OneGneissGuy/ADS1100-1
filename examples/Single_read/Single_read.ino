@@ -7,10 +7,10 @@
   The library updated on 18 May 2019 by Nikolay Cherkasov
   Github: https://github.com/cherkasovn/ADS1100
 
-  The example shows reading from the unit only when requested.
-  The user is responsible for ensuring that the reading is properly updated.
-  Reading the value before it is acquired will result 
-  in receiving (false) duplicated values.
+  The example reads ADC data from the unit and performs conversion
+  only when requested. The user is responsible for ensuring that 
+  the reading is properly updated. Reading the value 
+  before it is acquired will result in receiving old values.
 */
 /**************************************************************************/
 #include <Wire.h>

@@ -7,11 +7,10 @@
   The library updated on 18 May 2019 by Nikolay Cherkasov
   Github: https://github.com/cherkasovn/ADS1100
 
-  The example shows continuous reading from the unit. 
-  There is an active checking if the value is updated.
-  Reading such an updated status consumes a bit of I2C traffic and always
-  reads the ADC value. The ADC value may be old 
-  until the flag conversionDone() is correct.
+  The example reads ADC data from the unit and performs conversion
+  only when requested.continuous reading from the unit. 
+  The output is performed only when conversion is performed 
+  actively checking for this condition. 
 */
 /**************************************************************************/
 

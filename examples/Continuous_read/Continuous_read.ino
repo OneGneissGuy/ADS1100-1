@@ -10,7 +10,7 @@
   The example shows continuous reading from the unit. The user
   is responsible for ensuring that the reading is properly updated.
   Reading the value before it is acquired will result 
-  in receiving (false) duplicated values.
+  in receiving old values.
 */
 /**************************************************************************/
 
