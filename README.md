@@ -3,8 +3,8 @@
 ADS1100 is a 16-Bit, 128SPS, 1-Ch Delta-Sigma Analogue to Digital converted made by Texas Instruments. The unit uses only external reference - the same as VCDD. It is very convinient to measure resistence rather than absolute voltages.
 It is a minimalistic library that supports basic operations and continous as well as single conversion modes.
 
-<img src="https://github.com/cherkasovn/ADS1100/blob/master/extras/ADS1100_chip_scheme.png" alt="ADS1110 PINOUT" width="205" height="283">
-See more details at the [manufacturer](http://www.ti.com/product/ADS1100).
+<img src="extras/ADS1100_chip_scheme.png" alt="ADS1110 PINOUT" width="205" height="283">
+See more details at [Texas Instruments](http://www.ti.com/product/ADS1100).
 # Library Functions
 __begin()__
 Parameters:     None
