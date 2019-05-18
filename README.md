@@ -5,6 +5,7 @@ It is a minimalistic library that supports basic operations and continous as wel
 
 <img src="extras/ADS1100_chip_scheme.png" alt="ADS1110 PINOUT" width="205" height="283">
 See more details at [Texas Instruments](http://www.ti.com/product/ADS1100).
+
 # Library Functions
 __begin()__
 Parameters:     None
