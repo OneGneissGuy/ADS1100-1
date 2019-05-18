@@ -1,6 +1,31 @@
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
 startSingleConversion	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
 conversionDone				KEYWORD2
-configure					KEYWORD3
-getvalue						KEYWORD4
-ADS1100						KEYWORD5
-value							KEYWORD6
+configure					KEYWORD2
+getvalue						KEYWORD2
+ADS1100						KEYWORD2
+value							KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+ADS1100_START_SINGLE_CONVERSION				LITERAL1
+ADS1100_CONVERSION_MASK							LITERAL1
+ADS1100_CONVERSION_SINGLE						LITERAL1
+ADS1100_CONVERSION_CONTINOUS					LITERAL1
+ADS1100_DATA_RATE_MASK							LITERAL1
+ADS1100_DATA_RATE_128SPS						LITERAL1
+ADS1100_DATA_RATE_32SPS							LITERAL1
+ADS1100_DATA_RATE_16SPS							LITERAL1
+ADS1100_DATA_RATE_8SPS							LITERAL1
+ADS1100_GAIN_MASK									LITERAL1
+ADS1100_GAIN_1X									LITERAL1
+ADS1100_GAIN_2X									LITERAL1
+ADS1100_GAIN_4X									LITERAL1
+ADS1100_GAIN_8X									LITERAL1
