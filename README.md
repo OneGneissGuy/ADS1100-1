@@ -1,7 +1,7 @@
 # ADS1100 Arduino Library
 
-ADS1100 is a 16-Bit, 128SPS, 1-Ch Delta-Sigma Analogue to Digital converted made by Texas Instruments. The unit uses only external reference - the same as VCDD. It is very convinient to measure resistence rather than absolute voltages.
-It is a minimalistic library that supports basic operations and continous as well as single conversion modes.
+ADS1100 is a 16-Bit, 128SPS, 1-Ch Delta-Sigma Analogue to Digital converted made by Texas Instruments. The unit uses only external reference - the same as VDD. It is convenient to measure resistance rather than absolute voltages.
+It is a minimalistic library that supports basic operations and continuous as well as single conversion modes.
 
 <img src="extras/ADS1100_chip_scheme.png" alt="ADS1110 PINOUT" width="205" height="283">
 See more details at [Texas Instruments](http://www.ti.com/product/ADS1100).
@@ -14,7 +14,7 @@ Returns:        None
 
 __getvalue()__
 Parameters:     None
-Description:    Reads the ADC value data regardless of the fact it is recent or not. Works (obligatory) in continous reading mode, optional in the single mode. Read the __value__ int16_t instead.
+Description:    Reads the ADC value data regardless of the fact it is recent or not. Works (obligatory) in continuous reading mode, optional in the single mode. Read the __value__ int16_t instead.
 Returns:        int16_t (can be negative if Vin- is not wired to GND. If wired to GND, a slight negative value is still possible
 
 __configure(uint8_t singleMode, uint8_t dataRate, uint8_t gain)__
