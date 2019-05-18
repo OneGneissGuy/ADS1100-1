@@ -1,0 +1,19 @@
+{
+		"name": "ADS1100",
+	  "version": "1.0.0",
+		"frameworks": "AVR",
+		"license": "GPL-3.0",
+		"keywords": "ADS1100, I2C, ADC, 16-BIT, Texas Instruments",
+		"description": "ADS1100 Arduino Library (16-BIT ADC with external Vdd Reference and I2C Interface)",
+		"downloadUrl": "https://github.com/cherkasovn/ADS1100/archive/master.zip",
+		"authors":
+		{
+		        "name": "Nikolay Cherkasov",
+		        "maintainer": true
+		},
+		"repository":
+		{
+		    "type": "git",
+		    "url": "https://github.com/cherkasovn/ADS1100"
+		}
+}
