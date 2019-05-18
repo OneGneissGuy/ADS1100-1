@@ -5,9 +5,9 @@ ADS1100 is a 16-Bit, 128SPS, 1-Ch Delta-Sigma Analogue to Digital converted made
 It is a minimalistic library that supports basic operations and continuous as well as single conversion modes.
 
 <img src="extras/ADS1100_chip_scheme.png" alt="ADS1110 PINOUT" width="205" height="283">
-See more details at [Texas Instruments](http://www.ti.com/product/ADS1100)
+See more details at [Texas Instruments](http://www.ti.com/product/ADS1100).
 
-# Library Functions
+# Library Functions  
 __begin()__  
 Parameters:  None  
 Description: Starts the I2C communication (Wire.begin) with the ADS1100 unit  
@@ -34,7 +34,7 @@ Parameters:     None
 Description:    Requests the unit to start the reading the ADC value. The reading actually takes the whole reading time  
 Returns:        None  
 
-# Examples
+# Examples  
 __Continuous_read__  
 The example shows continuous reading from the unit. The user is responsible for ensuring that the reading is properly updated. Reading the value before it is acquired will result in receiving old values.
 
@@ -44,6 +44,6 @@ The example reads ADC data from the unit and performs conversion only when reque
 __Single_read_if_ready__  
 The example reads ADC data from the unit and performs conversion only when requested.continuous reading from the unit. The output is performed only when conversion is performed actively checking for this condition. 
 
-# Licence
+# Licence  
 [GNU General Public License v3.0](https://github.com/cherkasovn/ADS1100/blob/master/LICENSE)
 Distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of 	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
